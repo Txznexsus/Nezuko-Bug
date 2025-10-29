@@ -37,7 +37,7 @@ global.author = "© mᥲძᥱ ᥕі𝗍һ ᑲᥡ ᥒᥱ᥊zᥙs"
 global.etiqueta = "𓆩ᥒᥱ᥊zᥙs​᭄"
 global.currency = "¥enes"
 global.banner = "https://qu.ax/MjAzQ.jpg"
-//global.icono = "https://i.pinimg.com/originals/b3/67/d5/b367d513d861de468305c32c6cd22756.jpg"
+//global.icono = "https://qu.ax/uReMx.jpg"
 global.catalogo = fs.readFileSync('./lib/catalogo.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
