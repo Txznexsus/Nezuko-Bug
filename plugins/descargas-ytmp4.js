@@ -13,7 +13,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text?.trim()) {
       return conn.reply(
         m.chat,
-        `🎋 *Ingresa el enlace del video de YouTube que deseas descargar.*\n\nEjemplo:\n${usedPrefix + command} https://youtu.be/HWjCStB6k4o`,
+        `🍃 *Ingresa el enlace del video de YouTube que deseas descargar.*\n\nEjemplo:\n${usedPrefix + command} https://youtu.be/HWjCStB6k4o`,
         m
       )
     }
@@ -56,21 +56,21 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     let caption
     if (meta?.author) {
       // API principal
-      caption = `╔═══❖•ೋ° ⚜️ °ೋ•❖═══╗
-🎬 *ＹＯＵＴＵＢＥ ＶＩＤＥＯ* 🌷
-╚═══❖•ೋ° ⚜️ °ೋ•❖═══╝
-🍉 *Título:* ${meta.title}
-📡 *Canal:* ${meta.author?.name}
-🕒 *Duración:* ${meta.duration?.timestamp || "Desconocida"}
-👁 *Vistas:* ${meta.views?.toLocaleString() || "?"}
-📆 *Publicado:* ${meta.ago}
-🎚 *Calidad:* ${down.quality}p
-💾 *Tamaño:* ${formatSize(size)}
+      caption = `╔═══❖•ೋ° 🦋 °ೋ•❖═══╗
+🌳 *ＹＯＵＴＵＢＥ ＶＩＤＥＯ* 🌷
+╚═══❖•ೋ° 🍃 °ೋ•❖═══╝
+🌴 *Título:* ${meta.title}
+🍄 *Canal:* ${meta.author?.name}
+☘️ *Duración:* ${meta.duration?.timestamp || "Desconocida"}
+🪸 *Vistas:* ${meta.views?.toLocaleString() || "?"}
+🍁 *Publicado:* ${meta.ago}
+🪵 *Calidad:* ${down.quality}p
+🪴 *Tamaño:* ${formatSize(size)}
 ────────────────────
 ✨ *Descarga Completa...*`
     } else {
       // API Yupra fallback
-      caption = `✨ *Descarga Completa...*`
+      caption = `🌱 *Descarga Completa...*`
     }
 
     await conn.sendMessage(m.chat, {
