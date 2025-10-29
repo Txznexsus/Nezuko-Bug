@@ -101,9 +101,10 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
     }
 
     const infoUser = `
-    ⃟■⃞🍃 ⃞һ᥆ᥣᥲ s᥆ᥡ ᥒᥱzᥙk᥆-ᑲ᥆𝗍 ⃞🍂 ⃞■⃟ 
-· · · · ·  ·  · · ··  · ·  · ·  · 
-︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶
+   🍃 һ᥆ᥣᥲ s᥆ᥡ ᥒᥱzᥙk᥆-ᑲ᥆𝗍 🍂 
+·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·
+
+︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶  ︶ ︶ ︶
 🌿 *Usuario:* @${userId}
 🍉 *Premium:* ${premium}
 🌍 *País:* ${pais}
