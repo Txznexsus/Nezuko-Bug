@@ -46,8 +46,8 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
           newsletterName: channelRD.name
         },
         externalAdReply: {
-          title: '꒰͡•*゜🩸 Kaneki Bot AI 🌿꒰͡•*゜・。 ͡꒱ֽ ׄ',
-          body: '💮 Dev: Shadow_xyz ☁️',
+          title: '🧃ᥒᥱzᥙk᥆🍃',
+          body: '🌱 ᥒᥱ᥊zᥙs.ᥴ᥆m 🍂',
           mediaUrl: null,
           description: null,
           previewType: "PHOTO",
