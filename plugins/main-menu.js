@@ -59,7 +59,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
     }
 
     let tags = {
-      'info': '𓂂𓏸 𐅹੭੭  `ᴍᴇɴᴜ ɪɴғᴏ` 🪵 ᦡᦡ',
+      'info': '✎﹏Ꮺ  `ᴍᴇɴᴜ ɪɴғᴏ` 🪵 ᦡᦡ',
       'main': '𓂂𓏸 𐅹੭੭  `ᴍᴇɴᴜ ᴍᴀɪɴ` 🌳 ᦡᦡ',
       'fun': '𓂂𓏸 𐅹੭੭  `ᴍᴇɴᴜ ғᴜɴ` 💐 ᦡᦡ',
       'rpg': '𓂂𓏸 𐅹੭੭  `ᴍᴇɴᴜ ʀᴘɢ` 🌷 ᦡᦡ',
