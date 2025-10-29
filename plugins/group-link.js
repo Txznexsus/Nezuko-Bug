@@ -15,10 +15,10 @@ var handler = async (m, { conn }) => {
     const info = `
 *⌁☍꒷₊˚ group • link ꒷₊˚⌁*
 
-*📛 Nombre:* ${metadata.subject}
-*🧩 ID:* ${metadata.id}
-*👑 Creado por:* ${owner}
-*👥 Miembros:* ${metadata.participants.length}
+*🍃 Nombre:* ${metadata.subject}
+*🪵 ID:* ${metadata.id}
+*🌾 Creado por:* ${owner}
+*🦋 Miembros:* ${metadata.participants.length}
 ${desc}
 
 > *🔗 Link del grupo:*
@@ -30,7 +30,7 @@ ${desc}
         message: {
           interactiveMessage: {
             body: { text: info },
-            footer: { text: '🌸 Rin Itoshi' },
+            footer: { text: '🍃 Nezuko-Bot' },
             header: {
               title: '✨ Información del Grupo',
               hasMediaAttachment: true,
