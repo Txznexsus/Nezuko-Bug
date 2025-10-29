@@ -129,8 +129,8 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
     const cuerpo = infoUser + `*🧃 mᥱᥒᥙ ძіs⍴᥆ᥒіᑲᥣᥱ 🍁*${menuTexto}`.trim()
 
     const imgs = [
-      'https://i.pinimg.com/originals/b3/67/d5/b367d513d861de468305c32c6cd22756.jpg',
-      'https://i.pinimg.com/originals/90/c8/58/90c858c65f0b3b2fca9a226fa369aa2b.png'
+      'https://qu.ax/MjAzQ.jpg',
+      'https://qu.ax/iGZKH.jpg'
     ]
     let imageUrl = imgs[Math.floor(Math.random() * imgs.length)]
 
