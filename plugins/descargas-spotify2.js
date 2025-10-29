@@ -39,11 +39,11 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
     const caption = `
 \`\`\`🎧 Título: ${json.title}
-👤 Artista: ${info?.artist || json.author}
-💽 Álbum: ${info?.album || 'Desconocido'}
-📆 Lanzamiento: ${info?.release_date || 'N/A'}
-⏱️ Duración: ${info?.duration || 'N/A'}
-🔗 Spotify: ${info?.spotify_preview || text}\`\`\``
+🍃 Artista: ${info?.artist || json.author}
+🍂 Álbum: ${info?.album || 'Desconocido'}
+🪴 Lanzamiento: ${info?.release_date || 'N/A'}
+💐 Duración: ${info?.duration || 'N/A'}
+🌴 Spotify: ${info?.spotify_preview || text}\`\`\``
 
     let thumb = null
     if (json.image) {
