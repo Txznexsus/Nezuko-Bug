@@ -44,20 +44,20 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let cards = [];
 
     for (let v of results) {
-      let info = `🎬 *Título:* ${v.title || "Sin título"}
-👤 *Creador:* ${v.creator || "Desconocido"}
-🌎 *Región:* ${v.region || "N/A"}
-🕒 *Duración:* ${v.duration || 0} segundos
-📅 *Publicado:* ${v.create_time || "N/A"}
+      let info = `🍁 *Título:* ${v.title || "Sin título"}
+🌹 *Creador:* ${v.creator || "Desconocido"}
+🌱 *Región:* ${v.region || "N/A"}
+💐 *Duración:* ${v.duration || 0} segundos
+🪻 *Publicado:* ${v.create_time || "N/A"}
 
-📈 *Vistas:* ${v.views?.toLocaleString() || 0}
-❤️ *Likes:* ${v.likes?.toLocaleString() || 0}
-💬 *Comentarios:* ${v.comments?.toLocaleString() || 0}
-🔁 *Compartidos:* ${v.share?.toLocaleString() || 0}
-⬇️ *Descargas:* ${v.download?.toLocaleString() || 0}
+🌸 *Vistas:* ${v.views?.toLocaleString() || 0}
+🌳 *Likes:* ${v.likes?.toLocaleString() || 0}
+🍂 *Comentarios:* ${v.comments?.toLocaleString() || 0}
+🪴 *Compartidos:* ${v.share?.toLocaleString() || 0}
+🌴 *Descargas:* ${v.download?.toLocaleString() || 0}
 
-🎵 *Audio:* ${v.music ? v.music.split("/").pop() : "Sin información"}
-🔗 *Enlace:* ${v.url || "No disponible"}`;
+🍓 *Audio:* ${v.music ? v.music.split("/").pop() : "Sin información"}
+🦋 *Enlace:* ${v.url || "No disponible"}`;
 
       let videoMsg = await createVideoMessage(v.nowm);
       if (!videoMsg) continue;
@@ -78,7 +78,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
               {
                 name: "cta_url",
                 buttonParamsJson: JSON.stringify({
-                  display_text: "🍉 𝐕𝐞𝐫 𝐞𝐧 𝐓𝐢𝐤𝐓𝐨𝐤",
+                  display_text: "🌷 𝐕𝐞𝐫 𝐞𝐧 𝐓𝐢𝐤𝐓𝐨𝐤",
                   url: v.url || v.nowm,
                 }),
               },
@@ -109,7 +109,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
                 text: `🌺 *Resultados de TikTok para:* ${text}`,
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "🌿 Kaneki Bot - AI • 𝐒𝐡𝐚𝐝𝐨𝐰.𝐱𝐲𝐳 ✨",
+                text: "🌱 ᥒᥱzᥙk᥆-ᑲ᥆𝗍 mძ 🍃",
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 hasMediaAttachment: false,
