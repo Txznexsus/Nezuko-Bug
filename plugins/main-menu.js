@@ -112,7 +112,9 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
 🎋 *Usuarios totales:* ${totalreg}
 ☁️ *Grupos activos:* ${groupsCount}
 🚀 *Tiempo activo:* ${uptime}
-─────────────────────
+·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·
+
+︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶  ︶ ︶
 🌾 *Bot:* ${(conn.user.jid == global.conn.user.jid ? '𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 🌱' : '𝙆𝙖𝙣𝙚𝙠𝙞 𝙎𝙪𝙗-𝘽𝙤𝙩 💮')}
 🕸️ *Comandos:* ${totalCommands}
 📡 *Versión:* ${vs}
