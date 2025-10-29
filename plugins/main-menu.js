@@ -93,7 +93,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
     for (let tag in tags) {
       let comandos = commands
         .filter(cmd => cmd.tags.includes(tag))
-        .map(cmd => cmd.help.map(e => `> ꕥ 🧃  ${usedPrefix}${e}`).join('\n'))
+        .map(cmd => cmd.help.map(e => `> ꕥ 🦋  ${usedPrefix}${e}`).join('\n'))
         .join('\n')
       if (comandos) {
         menuTexto += `\n\n*${tags[tag]}*\n${comandos}`
