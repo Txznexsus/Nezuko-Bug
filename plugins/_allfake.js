@@ -7,8 +7,8 @@ const { generateWAMessageFromContent, prepareWAMessageMedia, proto } = pkg
 
 var handler = m => m
 handler.all = async function (m) { 
-global.canalIdM = ["120363422142340004@newsletter", "120363422142340004@newsletter"]
-global.canalNombreM = ["☃️ 𝑲𝒂𝒏𝒆𝒌𝒊𝑩𝒐𝒕 - 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 🌿", "🔥 𝐊𝐚𝐧𝐞𝐊𝐢𝐁𝐨𝐭-𝐕3 - 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 ᯓ🍋"]
+global.canalIdM = ["120363401983007420@newsletter", "120363401983007420@newsletter"]
+global.canalNombreM = ["=͟͟͞𝗡𝗲𝘇𝘂𝗸𝗼 - 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹⏤͟͟͞͞★", "=͟͟͞𝗡𝗲𝘇𝘂𝗸𝗼 - 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹⏤͟͟͞͞★"]
 global.channelRD = await getRandomChannel()
 
 global.d = new Date(new Date + 3600000)
@@ -19,16 +19,16 @@ global.mes = d.toLocaleDateString('es', {month: 'long'})
 global.año = d.toLocaleDateString('es', {year: 'numeric'})
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true})
 
-var canal = 'https://whatsapp.com/channel/0029VbC34Nt42DchIWA0q11f'  
-var comunidad = 'https://whatsapp.com/channel/0029VbC34Nt42DchIWA0q11f'
-var git = 'https://github.com/Shadow-nex'
-var github = 'https://github.com/Shadow-nex/KanekiBot-V3' 
-var correo = 'shadowcore.xyz@gmail.com'
+var canal = 'https://whatsapp.com/channel/0029Vb5l5w1CHDyjovjN8s2V'  
+var comunidad = 'https://whatsapp.com/channel/0029Vb5l5w1CHDyjovjN8s2V'
+var git = 'https://github.com/'
+var github = 'https://github.com/' 
+var correo = 'suport@gmail.com'
 global.redes = [canal, comunidad, git, github, correo].getRandom()
 
 global.nombre = m.pushName || 'Anónimo'
-global.packsticker = `°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°\n🌿 Usuario: ${nombre}\n🎀 Bot: ${botname}\n📆 Fecha: ${fecha}\nⴵ Hora: ${moment.tz('America/Caracas').format('HH:mm:ss')}`
-global.packsticker2 = `\n°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°\n\n🍃 ${dev}`
+global.packsticker = `°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°\n🦋 Usuario: ${nombre}\n🍃 Bot: ${botname}\n📆 Fecha: ${fecha}\nⴵ Hora: ${moment.tz('America/Caracas').format('HH:mm:ss')}`
+global.packsticker2 = `\n°.⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸⎯ܴ⎯̶᳞͇ࠝ⎯⃘̶⎯̸.°\n\n🪻 ${dev}`
 
 global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, newsletterName: channelRD.name, serverMessageId: -1 }
 }}, { quoted: m }
@@ -83,7 +83,7 @@ global.rcanal = {
       newsletterName: channelRD.name,
     },
     externalAdReply: {
-      title: `•◍⃝߭۫ꯨ🍨۪〬.࠭⤿ʅ ${botname} 𑁍ꥈ࣪⬪🍃`,
+      title: `🍃๑⤿ʅ ${botname} ๑🍃`,
       body: `（つ /${nombre} • ${saludo}🍓꒱`,
       mediaUrl: null,
       description: null,
