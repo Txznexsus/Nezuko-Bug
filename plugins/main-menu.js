@@ -105,21 +105,21 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
 ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·
 
 ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶  ︶ ︶
-🌿 *Usuario:* @${userId}
-🍉 *Premium:* ${premium}
-🌍 *País:* ${pais}
-🎲 *Límite:* ${limit}
-🎋 *Usuarios totales:* ${totalreg}
-☁️ *Grupos activos:* ${groupsCount}
-🚀 *Tiempo activo:* ${uptime}
+🧃 *Usuario:* @${userId}
+🍂 *Premium:* ${premium}
+🪴 *País:* ${pais}
+🌿 *Límite:* ${limit}
+🌱 *Usuarios totales:* ${totalreg}
+🍃 *Grupos activos:* ${groupsCount}
+🍁 *Tiempo activo:* ${uptime}
 ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·
 
 ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶  ︶ ︶
-🌾 *Bot:* ${(conn.user.jid == global.conn.user.jid ? '𝙋𝙧𝙞𝙣𝙘𝙞𝙥𝙖𝙡 🌱' : '𝙆𝙖𝙣𝙚𝙠𝙞 𝙎𝙪𝙗-𝘽𝙤𝙩 💮')}
-🕸️ *Comandos:* ${totalCommands}
-📡 *Versión:* ${vs}
-🛠️ *Librería:* ${libreria}
-💐 *Fecha:* \`${hora}, ${dia}, ${fechaTxt}\`
+💐 *Bot:* ${(conn.user.jid == global.conn.user.jid ? 'ρɾιɳƈιραʅ 🌷' : 'ɳҽȥυƙσ ʂυႦ-Ⴆσƚ 🍃')}
+🎋 *Comandos:* ${totalCommands}
+🌹 *Versión:* ${vs}
+🪵 *Librería:* ${libreria}
+🌸 *Fecha:* \`${hora}, ${dia}, ${fechaTxt}\`
 ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·   ·
 
 ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶ ︶
@@ -137,10 +137,10 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
     await conn.sendMessage(m.chat, {
       image: { url: imageUrl },
       /*document: fs.readFileSync('./README.md'),
-      fileName: '🚀 ᴋᴀɴᴇᴋɪ ʙᴏᴛ ᴀɪ | Mᴇɴᴜ 🌸',
+      fileName: '🍂 ᥒᥱzᥙk᥆-ᑲ᥆𝗍 mძ┆mᥱᥒᥙ 🌾',
       mimetype: 'application/pdf',*/
       caption: cuerpo,
-      fileName: '🩸 Kaneki Bot AI | Menu ☯',
+      fileName: '🌷 ᥒᥱzᥙk᥆-ᑲ᥆𝗍 mძ┆mᥱᥒᥙ 🍃',
       mimetype: 'image/jpeg',
       mentions: [m.sender],
       ...metaMsg
