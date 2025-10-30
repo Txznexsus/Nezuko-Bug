@@ -99,17 +99,17 @@ let handler = async (m, { conn }) => {
     let response = 
 ` \`🪵 𝑺𝑻𝑨𝑻𝑼𝑺┆𝑷𝑰𝑵𝑮 🌱\`
 
-┌ ° 🧃 *Ping:* ${latency} ms  
-│ ° 🍁 *Latency:* ${latensi.toFixed(4)} ms  
-│ ° 🪴 *RAM Usage:* ${usedRAM}/${totalRAM} MB  
-│ ° 🌹 *RAM Libre:* ${freeRAM} MB  
-│ ° 🍀 *CPU:* ${cpu.split(' @')[0]} (${cores} Núcleos)  
-│ ° 🍓 *Arquitectura:* ${arch}  
-│ ° 🎋 *Sistema:* ${platform.toUpperCase()}  
-│ ° 🌿 *Versión Node:* ${nodeVersion}  
-│ ° 🪸 *Load Promedio:* ${loadAvg}  
-│ ° 🪾 *Uptime:* ${uptimeFormatted}  
-└ ° 🍃 *Date/Time:* ${fechaHora}
+┌ ° 🧃 *⍴іᥒg:* ${latency} ms  
+│ ° 🍁 *ᥣᥲ𝗍ᥱᥒᥴᥡ:* ${latensi.toFixed(4)} ms  
+│ ° 🪴 *rᥲm Usage:* ${usedRAM}/${totalRAM} MB  
+│ ° 🌹 *rᥲm Libre:* ${freeRAM} MB  
+│ ° 🍀 *ᥴ⍴ᥙ:* ${cpu.split(' @')[0]} (${cores} Núcleos)  
+│ ° 🍓 *ᥲr𝗊ᥙі𝗍ᥱᥴ𝗍ᥙrᥲ:* ${arch}  
+│ ° 🎋 *sіs𝗍ᥱmᥲ:* ${platform.toUpperCase()}  
+│ ° 🌿 *᥎ᥱrsі᥆́ᥒ Node:* ${nodeVersion}  
+│ ° 🪸 *ᥣ᥆ᥲძ ⍴r᥆mᥱძі᥆:* ${loadAvg}  
+│ ° 🪾 *ᥙ⍴𝗍іmᥱ:* ${uptimeFormatted}  
+└ ° 🍃 *ძᥲ𝗍ᥱ/𝗍іmᥱ:* ${fechaHora}
 
 \`\`\`${sysInfo.trim()}\`\`\`
 > 🍃 ᥒᥱzᥙk᥆-ᑲ᥆𝗍┆ᥒᥱ᥊zᥙs`
