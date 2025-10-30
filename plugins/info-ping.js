@@ -92,7 +92,7 @@ let handler = async (m, { conn }) => {
   const arch = os.arch()
   const fechaHora = moment().tz('America/Lima').format('YYYY/MM/DD, h:mm A')
 
-  const thumbBuffer = Buffer.from(await (await fetch('https://files.catbox.moe/ge2vz7.jpg')).arrayBuffer())
+  const thumbBuffer = Buffer.from(await (await fetch('https://qu.ax/rBcij.jpg')).arrayBuffer())
 
   exec(`neofetch --stdout`, async (error, stdout) => {
     let sysInfo = stdout.toString('utf-8').replace(/Memory:/, 'Ram:')
