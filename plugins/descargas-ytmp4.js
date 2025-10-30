@@ -13,17 +13,16 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     if (!text?.trim()) {
       return conn.reply(
         m.chat,
-        `🍃 *Ingresa el enlace del video de YouTube que deseas descargar.*\n\nEjemplo:\n${usedPrefix + command} https://youtu.be/HWjCStB6k4o`,
+        `🪵 *іᥒgrᥱsᥲ ᥱᥣ ᥱᥒᥣᥲᥴᥱ ძᥱᥣ ᥎іძᥱ᥆ ძᥱ ᥡ᥆ᥙ𝗍ᥙᑲᥱ 𝗊ᥙᥱ ძᥱsᥱᥲs ძᥱsᥴᥲrgᥲr.*\n\nEjemplo:\n${usedPrefix + command} https://youtu.be/HWjCStB6k4o`,
         m
       )
     }
 
     await m.react('🕒')
-    await conn.reply(m.chat, '*_🍃 Descargando video uwu_*', m, rcanal)
+    await conn.reply(m.chat, '*_🌿 ძᥱsᥴᥲrgᥲᥒძ᥆ ᥎іძᥱ᥆_*', m, rcanal)
 
     let down, meta
     try {
-      // API principal
       const apiUrl = `https://api.vreden.my.id/api/v1/download/youtube/video?url=${encodeURIComponent(text)}&quality=360`
       const response = await fetch(apiUrl)
       if (!response.ok) throw "Error en la API principal."
@@ -34,7 +33,6 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       if (!down?.url) throw "No se pudo obtener el enlace de descarga desde la API principal."
 
     } catch (err) {
-      // Fallback API: Yupra
       const yupraUrl = `https://api.yupra.com/api/downloader/ytmp4?url=${encodeURIComponent(text)}`
       const response = await fetch(yupraUrl)
       if (!response.ok) throw "Error en la API Yupra."
@@ -47,30 +45,26 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
       }
       if (!down.url) throw "No se pudo obtener el enlace de descarga desde Yupra."
 
-      meta = { title: down.filename } // Solo para mostrar algo
+      meta = { title: down.filename }
     }
 
     const head = await fetch(down.url, { method: "HEAD" })
     const size = head.headers.get("content-length")
 
     let caption
-    if (meta?.author) {
-      // API principal
-      caption = `╔═══❖•ೋ° 🦋 °ೋ•❖═══╗
-🌳 *ＹＯＵＴＵＢＥ ＶＩＤＥＯ* 🌷
-╚═══❖•ೋ° 🍃 °ೋ•❖═══╝
-🌴 *Título:* ${meta.title}
-🍄 *Canal:* ${meta.author?.name}
-☘️ *Duración:* ${meta.duration?.timestamp || "Desconocida"}
-🪸 *Vistas:* ${meta.views?.toLocaleString() || "?"}
-🍁 *Publicado:* ${meta.ago}
-🪵 *Calidad:* ${down.quality}p
-🪴 *Tamaño:* ${formatSize(size)}
+    if (meta?.author) {l
+      caption = `🦋 *Título:* ${meta.title}
+🌴 *ᥴᥲᥒᥲᥣ:* ${meta.author?.name}
+🪵 *ძᥙrᥲᥴі᥆́ᥒ:* ${meta.duration?.timestamp || "Desconocida"}
+🪴 *᥎іs𝗍ᥲs:* ${meta.views?.toLocaleString() || "?"}
+💐 *⍴ᥙᑲᥣіᥴᥲძ᥆:* ${meta.ago}
+🌱 *ᥴᥲᥣіძᥲძ:* ${down.quality}p
+🧃 *𝗍ᥲmᥲᥒ̃᥆:* ${formatSize(size)}
 ────────────────────
-✨ *Descarga Completa...*`
+🍃 *ძᥱsᥴᥲrgᥲ Completa...*`
     } else {
-      // API Yupra fallback
-      caption = `🌱 *Descarga Completa...*`
+
+      caption = `🍃 *ძᥱsᥴᥲrgᥲ Completa...*`
     }
 
     await conn.sendMessage(m.chat, {
