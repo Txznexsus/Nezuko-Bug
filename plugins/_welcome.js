@@ -6,6 +6,7 @@ async function generarBienvenida({ conn, userId, groupMetadata, chat }) {
   const username = `@${userId.split('@')[0]}`
   const pp = await conn.profilePictureUrl(userId, 'image').catch(() => 'https://raw.githubusercontent.com/The-King-Destroy/Adiciones/main/Contenido/1745522645448.jpeg')
   const fecha = new Date().toLocaleDateString("es-ES", { timeZone: "America/Mexico_City", day: 'numeric', month: 'long', year: 'numeric' })
+  const hora = fecha.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' })
   const groupSize = groupMetadata.participants.length + 1
   const desc = groupMetadata.desc?.toString() || 'Sin descripción'
   const mensaje = (chat.sWelcome || 'Edita con el comando "setwelcome"')
@@ -13,17 +14,17 @@ async function generarBienvenida({ conn, userId, groupMetadata, chat }) {
     .replace(/{grupo}/g, `*${groupMetadata.subject}*`)
     .replace(/{desc}/g, `${desc}`)
 
-  const caption = `👋 ¡Hola, ${username}!
+  const caption = `🦋 ¡һ᥆ᥣᥲ, ${username}!
 Bienvenid@ al grupo *_${groupMetadata.subject}_*
 
 
-🍃 *_Esperamos que disfrutes tu estadía._*
+🌴 *_ᥱs⍴ᥱrᥱm᥆s 𝗊ᥙᥱ ძіs𝖿rᥙ𝗍ᥱs ძᥱ ᥱs𝗍ᥱ́._*
 
-🌿 \`𝐈𝐧𝐟𝐨 - 𝐆𝐫𝐨𝐮𝐩:\`
- • ᴍɪᴇᴍʙʀᴏs: ${groupSize}
- • ʜᴏʀᴀ: undefined
- • ғᴇᴄʜᴀ: ${fecha}
- • ᴅᴇsᴄʀɪᴘᴄɪᴏɴ: ${mensaje}`
+🍁 \`іᥒ𝖿᥆ - gr᥆ᥙ⍴:\`
+ • mіᥱmᑲr᥆s: ${groupSize}
+ • һ᥆rᥲ: ${hora}
+ • 𝖿ᥱᥴһᥲ: ${fecha}
+ • ძᥱsᥴrі⍴ᥴі᥆́ᥒ: ${mensaje}`
   return { pp, caption, username }
 }
 
@@ -38,14 +39,14 @@ async function generarDespedida({ conn, userId, groupMetadata, chat }) {
     .replace(/{grupo}/g, `*${groupMetadata.subject}*`)
     .replace(/{desc}/g, `*${desc}*`)
 
-  const caption = `💐 ${username}, ha salido del grupo *"_${groupMetadata.subject}_"*
+  const caption = `🌳 ${username}, һᥲ sᥲᥣіძ᥆ ძᥱᥣ grᥙ⍴᥆ *"_${groupMetadata.subject}_"*
 
-🌾 ${mensaje}
+🎋 ${mensaje}
 
-📉 \`𝐄𝐬𝐭𝐚𝐝𝐨 𝐀𝐜𝐭𝐮𝐚𝐥:\`
- • ᴍɪᴇᴍʙʀᴏs: ${groupSize}
- • ʜᴏʀᴀ: undefined
- • ғᴇᴄʜᴀ: ${fecha}`
+🪴 \`ᥱs𝗍ᥲძ᥆ ᥲᥴ𝗍ᥙᥲᥣ:\`
+ • mіᥱmᑲr᥆s: ${groupSize}
+ • һ᥆rᥲ: ${hora}
+ • 𝖿ᥱᥴһᥲ: ${fecha}`
   return { pp, caption, username }
 }
 
@@ -71,7 +72,7 @@ handler.before = async function (m, { conn, participants, groupMetadata }) {
 
   const fkontak = {
     key: { participant: '0@s.whatsapp.net', remoteJid: 'status@broadcast', fromMe: false, id: 'Halo' },
-    message: { locationMessage: { name: '🍁 ᥕᥱᥣᥴ᥆mᥱ - ᥒᥱzᥙk᥆ ᑲ᥆𝗍 🍃', jpegThumbnail: thumbBuffer } },
+    message: { locationMessage: { name: '🌱 ᑲіᥱᥒ᥎ᥱᥒіძ᥆ - ᥒᥱzᥙk᥆ ᑲ᥆𝗍 🍃', jpegThumbnail: thumbBuffer } },
     participant: '0@s.whatsapp.net'
   }
 
@@ -92,12 +93,12 @@ handler.before = async function (m, { conn, participants, groupMetadata }) {
       },
       businessOwnerJid: who,
       caption: caption,
-      footer: `👥 Miembros: ${totalMembers} 📆 ${date}`,
+      footer: `🌱 Miembros: ${totalMembers} 🍂 ${date}`,
       interactiveButtons: [
         {
           name: 'quick_reply',
           buttonParamsJson: JSON.stringify({
-            display_text: '🦋 mᥱᥒᥙ - ᥒᥱzᥙk᥆ ᑲ᥆𝗍🍃',
+            display_text: '🧃 mᥱᥒᥙ - ᥒᥱzᥙk᥆ 🌴',
             id: '#menu'
           })
         }
@@ -125,12 +126,12 @@ handler.before = async function (m, { conn, participants, groupMetadata }) {
       },
       businessOwnerJid: who,
       caption: caption,
-      footer: `👥 Miembros: ${totalMembers} 📆 ${date}`,
+      footer: `🌱 Miembros: ${totalMembers} 🍂 ${date}`,
       interactiveButtons: [
         {
           name: 'quick_reply',
           buttonParamsJson: JSON.stringify({
-            display_text: '🦋 mᥱᥒᥙ - ᥒᥱzᥙk᥆ ᑲ᥆𝗍 🍃',
+            display_text: '🧃 mᥱᥒᥙ - ᥒᥱzᥙk᥆ 🌴',
             id: '#menu'
           })
         }
