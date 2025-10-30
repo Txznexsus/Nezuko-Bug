@@ -68,7 +68,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
   const start = new Date().getTime()
-  await conn.sendMessage(m.chat, { text: `*⚙️ 𝘊𝘢𝘭𝘤𝘶𝘭𝘢𝘯𝘥𝘰 𝘱𝘪𝘯𝘨...*` }, { quoted: m })
+  await conn.sendMessage(m.chat, { text: `*🍃 𝘊𝘢𝘭𝘤𝘶𝘭𝘢𝘯𝘥𝘰 𝘱𝘪𝘯𝘨...*` }, { quoted: m })
   const end = new Date().getTime()
   const latency = end - start
 
@@ -97,19 +97,19 @@ let handler = async (m, { conn }) => {
   exec(`neofetch --stdout`, async (error, stdout) => {
     let sysInfo = stdout.toString('utf-8').replace(/Memory:/, 'Ram:')
     let response = 
-` \`⚡ 𝗦 𝗧 𝗔 𝗧 𝗨 𝗦 • 𝗣 𝗜 𝗡 𝗚 🌿\`
+` \`🪵 𝗦 𝗧 𝗔 𝗧 𝗨 𝗦 • 𝗣 𝗜 𝗡 𝗚 🌱\`
 
-┌ ° 🌟 *Ping:* ${latency} ms  
-│ ° 📡 *Latency:* ${latensi.toFixed(4)} ms  
-│ ° 💻 *RAM Usage:* ${usedRAM}/${totalRAM} MB  
-│ ° 🧠 *RAM Libre:* ${freeRAM} MB  
-│ ° 🏗️ *CPU:* ${cpu.split(' @')[0]} (${cores} Núcleos)  
-│ ° ⚙️ *Arquitectura:* ${arch}  
-│ ° 🪟 *Sistema:* ${platform.toUpperCase()}  
-│ ° 🔢 *Versión Node:* ${nodeVersion}  
-│ ° 🔄 *Load Promedio:* ${loadAvg}  
-│ ° ⏳ *Uptime:* ${uptimeFormatted}  
-└ ° 🗓️ *Date/Time:* ${fechaHora}
+┌ ° 🧃 *Ping:* ${latency} ms  
+│ ° 🍁 *Latency:* ${latensi.toFixed(4)} ms  
+│ ° 🪴 *RAM Usage:* ${usedRAM}/${totalRAM} MB  
+│ ° 🌹 *RAM Libre:* ${freeRAM} MB  
+│ ° 🍀 *CPU:* ${cpu.split(' @')[0]} (${cores} Núcleos)  
+│ ° 🍓 *Arquitectura:* ${arch}  
+│ ° 🎋 *Sistema:* ${platform.toUpperCase()}  
+│ ° 🌿 *Versión Node:* ${nodeVersion}  
+│ ° 🪸 *Load Promedio:* ${loadAvg}  
+│ ° 🪾 *Uptime:* ${uptimeFormatted}  
+└ ° 🍃 *Date/Time:* ${fechaHora}
 
 \`\`\`${sysInfo.trim()}\`\`\`
 > 🍃 ᥒᥱzᥙk᥆-ᑲ᥆𝗍┆ᥒᥱ᥊zᥙs`
