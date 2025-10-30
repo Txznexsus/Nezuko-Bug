@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
   let latensi = speed() - timestamp
 
   const start = new Date().getTime()
-  await conn.sendMessage(m.chat, { text: `*⚙️ 𝘊𝘢𝘭𝘤𝘶𝘭𝘢𝘯𝘥𝘰 𝘱𝘪𝘯𝘨...*` }, { quoted: m })
+  await conn.sendMessage(m.chat, { text: `*🍃 𝘊𝘢𝘭𝘤𝘶𝘭𝘢𝘯𝘥𝘰 𝘱𝘪𝘯𝘨...*` }, { quoted: m })
   const end = new Date().getTime()
   const latency = end - start
 
@@ -35,15 +35,15 @@ let handler = async (m, { conn }) => {
 │ ° ⏳ *Uptime:* ${uptimeFormatted}
 └ ° 🗓️ *Date/Time:* ${fechaHora}
 \`\`\`${sysInfo.trim()}\`\`\`
-> ☄︎ кαиєкι вσт ν3 | 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝚂𝙷𝙰𝙳𝙾𝚆-𝚇𝚈𝚉`
+> 🍃 ᥒᥱzᥙk᥆-ᑲ᥆𝗍`
 
     await conn.sendMessage(m.chat, {
       text: response,
       mentions: [m.sender],
       contextInfo: {
         externalAdReply: {
-          title: '👑 𝐊𝐚𝐧𝐞𝐤𝐢 𝐁𝐨𝐭 𝐕3 💫 ',
-          body: '🌷 ρσωєяє∂ ву ѕнα∂σω',
+          title: '🧃 ᥒᥱzᥙk᥆-ᑲ᥆𝗍 🌾 ',
+          body: '🌷 ⍴᥆ᥕᥱrᥱძ ву ᥒᥱ᥊zᥙs',
           thumbnail: thumbBuffer,
           sourceUrl: redes,
           mediaType: 1,
