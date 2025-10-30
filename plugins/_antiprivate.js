@@ -8,7 +8,7 @@ const chat = global.db.data.chats[m.chat]
 const bot = global.db.data.settings[conn.user.jid] || {}
 if (m.chat === '120363401404146384@newsletter') return !0
 if (bot.antiPrivate && !isROwner) {
-await m.reply(`ꕥ Hola @${m.sender.split`@`[0]}, mi dueño a desactivado los comandos en los chats privados el cual serás bloqueado, si quieres usar los comandos del bot te invito a que te unas a nuestra comunidad.\n\n${community}`, false, {mentions: [m.sender]})
+await m.reply(`🍃 Hola @${m.sender.split`@`[0]}, mi dueño a desactivado los comandos en los chats privados el cual serás bloqueado, si quieres usar los comandos del bot te invito a que te unas a nuestra comunidad.\n\n${community}`, false, {mentions: [m.sender]})
 await this.updateBlockStatus(m.chat, 'block')
 }
 return !1
