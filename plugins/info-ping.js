@@ -97,7 +97,7 @@ let handler = async (m, { conn }) => {
   exec(`neofetch --stdout`, async (error, stdout) => {
     let sysInfo = stdout.toString('utf-8').replace(/Memory:/, 'Ram:')
     let response = 
-` \`🪵 𝗦 𝗧 𝗔 𝗧 𝗨 𝗦 • 𝗣 𝗜 𝗡 𝗚 🌱\`
+` \`🪵 𝑺𝑻𝑨𝑻𝑼𝑺┆𝑷𝑰𝑵𝑮 🌱\`
 
 ┌ ° 🧃 *Ping:* ${latency} ms  
 │ ° 🍁 *Latency:* ${latensi.toFixed(4)} ms  
