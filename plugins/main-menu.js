@@ -96,7 +96,7 @@ let handler = async (m, { conn, usedPrefix, __dirname, participants }) => {
         .map(cmd => cmd.help.map(e => `> ✿ 🦋  ${usedPrefix}${e}`).join('\n'))
         .join('\n')
       if (comandos) {
-        menuTexto += `\n\n*${tags[tag]}*\n\`\`\`${comandos}\`\`\```
+        menuTexto += `\n\n*${tags[tag]}*\n\`\`\`${comandos}\`\`\``
       }
     }
 
