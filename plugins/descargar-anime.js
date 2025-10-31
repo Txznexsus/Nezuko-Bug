@@ -19,7 +19,7 @@ async function getLangs(episodes) {
 
 let handler = async (m, { command, usedPrefix, conn, text, args }) => {
     if (!text) return m.reply(
-        `🔥 *Ingresa el título de algún anime o la URL.*\n\n` +
+        `🪵 *Ingresa el título de algún anime o la URL.*\n\n` +
         `• ${usedPrefix + command} Mushoku Tensei\n` +
         `• ${usedPrefix + command} https://animeav1.com/media/mushoku-tensei`
     );
@@ -40,13 +40,13 @@ let handler = async (m, { command, usedPrefix, conn, text, args }) => {
             let caption = `
 乂 \`\`\`ANIME - DOWNLOAD\`\`\`
 
-≡ 🌷 *Título :* ${title} - ${altTitle}
-≡ 🌾 *Descripción :* ${description}
-≡ 🌲 *Votos :* ${votes}
-≡ 🍂 *Rating :* ${rating}
-≡ 🍃 *Géneros :* ${gen}
-≡ 🌱 *Episodios totales :* ${total}
-≡ 🌿 *Episodios disponibles :*
+≡ 🧃 *Título :* ${title} - ${altTitle}
+≡ 🪻 *Descripción :* ${description}
+≡ 🍂 *Votos :* ${votes}
+≡ 🦋 *Rating :* ${rating}
+≡ 🌴 *Géneros :* ${gen}
+≡ 🌳 *Episodios totales :* ${total}
+≡ 🪸 *Episodios disponibles :*
 
 ${eps}
 
@@ -77,7 +77,7 @@ ${eps}
 
             let cap = `乂 *ANIME - SEARCH*\n`;
             results.slice(0, 15).forEach((res, index) => {
-                cap += `\n\`${index + 1}\`\n≡ ♻️ *Title :* ${res.title}\n≡ 🕸️ *Link :* ${res.link}\n`;
+                cap += `\n\`${index + 1}\`\n≡ 🪵 *Title :* ${res.title}\n≡ 🦋 *Link :* ${res.link}\n`;
             });
 
             await conn.sendMessage(m.chat, { text: cap }, { quoted: m });
