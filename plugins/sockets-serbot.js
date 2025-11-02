@@ -31,7 +31,7 @@ let time = global.db.data.users[m.sender].Subs + 120000
 if (new Date - global.db.data.users[m.sender].Subs < 120000) return conn.reply(m.chat, `ꕥ Debes esperar ${msToTime(time - new Date())} para volver a vincular un *Sub-Bot.*`, m)
 let socklimit = global.conns.filter(sock => sock?.user).length
 if (socklimit >= 7) {
-return m.reply(`ꕥ No se han encontrado espacios disponibles para registrar un `Sub-Bot`.
+return m.reply(`ꕥ No se han encontrado espacios disponibles para registrar un `Sub-Bot`
 > Por favor intenta en unos minutos.`)
 }
 let mentionedJid = await m.mentionedJid
