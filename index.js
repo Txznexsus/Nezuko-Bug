@@ -38,7 +38,7 @@ font: 'block',
 align: 'center',
 gradient: ['green', 'white']
 })
-say('Made with love by Shadow_xyz', {
+say('Made with love in nezuko_ofc', {
 font: 'console',
 align: 'center',
 colors: ['cyan', 'magenta', 'yellow']
