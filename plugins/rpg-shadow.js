@@ -78,19 +78,19 @@ const handler = async (m, { conn, args, command }) => {
     const senderName = await conn.getName(m.sender);
 
     const texto = `
-╭━━━〔 🎁 𝐑𝐄𝐂𝐎𝐌𝐏𝐄𝐍𝐒𝐀 🎋 〕━━⬣
+╭━━━〔 🎁 rᥱᥴ᥆m⍴ᥱᥒsᥲ 🎋 〕━━⬣
 │
-│ 💎 *Usuario:* @${senderNumber}
-│ 🧸 *Nombre:* ${senderName}
+│ 💎 *ᥙsᥙᥲrі᥆:* @${senderNumber}
+│ 🧸 *ᥒ᥆mᑲrᥱ:* ${senderName}
 │
-│ 🌸 *Has recibido:*
+│ 🌸 *һᥲs rᥱᥴіᑲіძ᥆:*
 │ 💵 *${recompensa.toLocaleString()} monedas*
 │ 🧠 *${recompensa.toLocaleString()} XP*
 │ 🪙 *${recompensa.toLocaleString()} tokens*
 │
-│ 🕒 Próximo reclamo en 1 minuto.
+│ 🕒 ⍴r᥆́᥊іm᥆ rᥱᥴᥣᥲm᥆ ᥱᥒ 1 mіᥒᥙ𝗍᥆.
 │
-╰━━━〔 𝐊𝐀𝐍𝐄𝐊𝐈 𝐁𝐎𝐓 𝐀𝐈 🌷 〕━━⬣
+╰━━━〔 ᥒᥱzᥙk᥆-ᑲ᥆𝗍 mძ 🌷 〕━━⬣
 `;
 
     await conn.sendMessage(
@@ -100,7 +100,7 @@ const handler = async (m, { conn, args, command }) => {
         mentions: [m.sender],
         contextInfo: {
           externalAdReply: {
-            title: '🎁 Recompensa de kaneki IA 🌸',
+            title: '🎁 Recompensa de ᥒᥱzᥙk᥆-ᑲ᥆𝗍 🌸',
             body: 'Has sido recompensado generosamente!',
             thumbnailUrl: 'https://qu.ax/ALOZa.jpg',
             sourceUrl: 'https://github.com/Shadow-nex',
