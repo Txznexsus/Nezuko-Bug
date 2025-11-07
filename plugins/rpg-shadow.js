@@ -102,7 +102,7 @@ const handler = async (m, { conn, args, command }) => {
           externalAdReply: {
             title: '🎁 Recompensa de ᥒᥱzᥙk᥆-ᑲ᥆𝗍 🌸',
             body: 'Has sido recompensado generosamente!',
-            thumbnailUrl: 'https://qu.ax/ALOZa.jpg',
+            thumbnailUrl: 'https://qu.ax/oUxnN.jpg',
             sourceUrl: 'https://github.com/Shadow-nex',
             mediaType: 1,
             renderLargerThumbnail: true
